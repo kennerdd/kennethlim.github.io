@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sunglass Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #232f3e;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .products-carousel {
+            display: flex;
+            overflow: hidden;
+        }
+        .product-card {
+            flex: 0 0 300px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            margin: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 10px;
+        }
+        .product-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .product-price {
+            color: #e67e22;
+        }
+        .add-to-cart {
+            background-color: #e67e22;
+            color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .bottom-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #232f3e;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Sunglass Store</h1>
+    </header>
+    <div class="container">
+        <div class="products-carousel">
+            <div class="product-card">
+                <img src="https://www.hallensteins.com/content/products/ab-neo-sunglasses-black-front-10003274.jpg?width=1029&optimize=high" alt="Product Image">
+                <div class="product-info">
+                    <div class="product-title">Panel Sunglasses</div>
+                    <div class="product-price">$99.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://media.gq-magazine.co.uk/photos/6272708f4b6cc53784b4751d/master/w_1280,c_limit/_04052021_SG_05.jpg" alt="Product Image">
+                <div class="product-info">
+                    <div class="product-title">SunFun Sunglasses</div>
+                    <div class="product-price">$89.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://ap.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-signature-square-round-sunglasses-s00-sunglasses--Z1964U_PM2_Front%20view.png?wid=1090&hei=1090" alt="Product Image">
+                <div class="product-info">
+                    <div class="product-title">Mont Sunglasses</div>
+                    <div class="product-price">$119.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61QiqzZcTNL._AC_SX695_.jpg" alt="Product Image">
+                <div class="product-info">
+                    <div class="product-title">Louie Vuitton Sunglasses</div>
+                    <div class="product-price">$149.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://www.cartier.sg/content/dam/rcq/car/21/09/63/5/2109635.png.scale.314.high.pasha-de-cartier-sunglasses-titanium.pnghttps://www.cartier.sg/content/dam/rcq/car/21/09/63/5/2109635.png.scale.314.high.pasha-de-cartier-sunglasses-titanium.png" alt="Product Image">
+                <div class="product-info">
+                    <div class="product-title">Ray-Tan Sunglasses</div>
+                    <div class="product-price">$79.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="bottom-banner">
+                <button>Contact Us</button>
+                <button>Discounts</button>
+                <button>Store Location</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
